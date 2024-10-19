@@ -218,8 +218,6 @@ def estimate_costs():
 # Route to handle form submission and run the script
 @app.route('/run', methods=['POST'])
 def run_script():
-    # chiave API
-    #api_key_google = 'AIzaSyB-NIXBcjPEmlzktJzQMNFds9YIK-Y-Kp0'
     
     place_type = request.form['place_type']
     center_lat = float(request.form['center_lat'])
