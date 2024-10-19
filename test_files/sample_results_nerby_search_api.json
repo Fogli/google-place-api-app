@@ -1,0 +1,166 @@
+{
+	"html_attributions": [],
+	"next_page_token": "AXCi2Q4UcJ3RICeiKL8fwg9srQhQfzcLNxXH5JXJn9kzFrFhRaTbC9OtvK8e6CYv1o8Lu4tshvw8EEpD8JjT2X6k-l0Qe_SbM05v1__le60LENyqGb-3YCV8UZTMOcjmZQC9VlWMllRhK5UKAfKOvRj2dKYaK4djqjIk5TuYiXqO1wx6NE3wzvCcnPpMh9TqCSwp6lNKHYpHeDqjDunoquPNqT_qxfZaMkLVz90WmzMw4O6E-tiBbynJMGqMm4vR9I2eB4HV5CzfEa9YLiQHTbQtVsU7cWfoUvbsRzZzWBfB6I_vtGeg4S3k9KQuSwvmxLAQjkKJyGtusDFRIa4Csi8NK-VqCyQE2oFPNTw4FGTU0FKHRf9kRZVDWKJ4kcGm-G1LkGBG_atFMcfdtdCEKi0ruqJ9jzfBKKL4VAeMtDyW_pxd4rNExJOkj0DVJ2XO",
+    "results": [
+		{
+			"business_status": "OPERATIONAL",
+			"geometry": {
+				"location": {
+					"lat": 45.0724266,
+					"lng": 7.6504471
+				},
+				"viewport": {
+					"northeast": {
+						"lat": 45.0739174802915,
+						"lng": 7.651898480291503
+					},
+					"southwest": {
+						"lat": 45.0712195197085,
+						"lng": 7.649200519708498
+					}
+				}
+			},
+			"icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+			"icon_background_color": "#FF9E67",
+			"icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+			"name": "I Soliti Ignoti",
+			"opening_hours": {
+				"open_now": false
+			},
+			"photos": [
+				{
+					"height": 3648,
+					"html_attributions": [
+						"<a href=\"https://maps.google.com/maps/contrib/117807106002456946955\">Anna Rana</a>"
+					],
+					"photo_reference": "AXCi2Q53dX3chqZXtqd8kYfWTIWO90WjGXlunjSJd4F8kdw_LwGfBfDJ0yQrSYiaiDRwChuolFIQEETnJ2rBCqXQVYQnbM0HxzIoARSnCBhEjlrhgNBZyEJ-8D6trD_9LX-hZ8NVWPFlbD4HdpcuwZ7kjEyJz_93g318SSMsyWvH0lqTNdrB",
+					"width": 2736
+				}
+			],
+			"place_id": "ChIJ_wMn6_xsiEcRfUrBAmPwZEs",
+			"plus_code": {
+				"compound_code": "3MC2+X5 Turin, Metropolitan City of Turin, Italy",
+				"global_code": "8FQ93MC2+X5"
+			},
+			"price_level": 2,
+			"rating": 4,
+			"reference": "ChIJ_wMn6_xsiEcRfUrBAmPwZEs",
+			"scope": "GOOGLE",
+			"types": [
+				"restaurant",
+				"food",
+				"point_of_interest",
+				"establishment"
+			],
+			"user_ratings_total": 1836,
+			"vicinity": "Corso Vittorio Emanuele II, 181, Torino"
+		},
+		{
+			"business_status": "OPERATIONAL",
+			"geometry": {
+				"location": {
+					"lat": 45.0674095,
+					"lng": 7.6628866
+				},
+				"viewport": {
+					"northeast": {
+						"lat": 45.06878193029151,
+						"lng": 7.664188430291502
+					},
+					"southwest": {
+						"lat": 45.06608396970851,
+						"lng": 7.661490469708498
+					}
+				}
+			},
+			"icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+			"icon_background_color": "#FF9E67",
+			"icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+			"name": "4 Soldi Ristorante",
+			"opening_hours": {
+				"open_now": false
+			},
+			"photos": [
+				{
+					"height": 300,
+					"html_attributions": [
+						"<a href=\"https://maps.google.com/maps/contrib/116533324385230973369\">4 Soldi Ristorante</a>"
+					],
+					"photo_reference": "AXCi2Q7UbjindFThoh0hQtF_8tVpONhoPAcl1QjQXV8aN2XBrz8X1pXZfM_q24E_sW0MSMpr3gDnIM1SqQcc6zu3IejWtzMgxXImGQ7f7JCH-9Jeo5a6B0xoBcYjS9gBsDNfFMf016OhELoYEV_VdHD-7yADAqD3yJimCHzSLf6DNEPD7Xw8",
+					"width": 400
+				}
+			],
+			"place_id": "ChIJPb9XQRptiEcRy6nmi1ogYB4",
+			"plus_code": {
+				"compound_code": "3M87+X5 Turin, Metropolitan City of Turin, Italy",
+				"global_code": "8FQ93M87+X5"
+			},
+			"price_level": 2,
+			"rating": 4.3,
+			"reference": "ChIJPb9XQRptiEcRy6nmi1ogYB4",
+			"scope": "GOOGLE",
+			"types": [
+				"restaurant",
+				"food",
+				"point_of_interest",
+				"establishment"
+			],
+			"user_ratings_total": 3271,
+			"vicinity": "Corso Castelfidardo, 7, Torino"
+		},
+		{
+			"business_status": "OPERATIONAL",
+			"geometry": {
+				"location": {
+					"lat": 45.0696409,
+					"lng": 7.668329400000001
+				},
+				"viewport": {
+					"northeast": {
+						"lat": 45.07100183029149,
+						"lng": 7.669648830291503
+					},
+					"southwest": {
+						"lat": 45.06830386970849,
+						"lng": 7.666950869708498
+					}
+				}
+			},
+			"icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+			"icon_background_color": "#FF9E67",
+			"icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+			"name": "Il Padellino",
+			"opening_hours": {
+				"open_now": false
+			},
+			"photos": [
+				{
+					"height": 2340,
+					"html_attributions": [
+						"<a href=\"https://maps.google.com/maps/contrib/116927344718556493392\">Claudio Jordan</a>"
+					],
+					"photo_reference": "AXCi2Q4WIDq2MJWfAqtjegvslkaWWpshILcXBtdMlkLiEFWZFiv5yyT8UXuL-yM7YMo-5W0MQcF9a5lPQqI3CJbRplASdPAljGAUOvmMK1minKJ-79Cq3wmAST0Ij-BWrJEcqK6i-EyVMw6u9suoLIS0i-6BMquQnayPWgfDu95hIoEvACbx",
+					"width": 4160
+				}
+			],
+			"place_id": "ChIJXeMd0BFtiEcRZG1b4ibVLhc",
+			"plus_code": {
+				"compound_code": "3M99+V8 Turin, Metropolitan City of Turin, Italy",
+				"global_code": "8FQ93M99+V8"
+			},
+			"price_level": 2,
+			"rating": 4,
+			"reference": "ChIJXeMd0BFtiEcRZG1b4ibVLhc",
+			"scope": "GOOGLE",
+			"types": [
+				"restaurant",
+				"meal_takeaway",
+				"food",
+				"point_of_interest",
+				"establishment"
+			],
+			"user_ratings_total": 2747,
+			"vicinity": "Corso Vinzaglio, 21, Torino"
+		}
+    ]
+}

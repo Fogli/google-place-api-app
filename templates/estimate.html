@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Estimate Costs</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+
+    <h2>Estimated Costs and Parameters</h2>
+    <p>Type of Place: {{ place_type }}</p>
+    <p>Latitude: {{ center_lat }}</p>
+    <p>Longitude: {{ center_lon }}</p>
+    <p>Radius (meters): {{ radius }}</p>
+    <p>Expected Results: {{ expected_results }}</p>
+    <p>Number of Centers: {{ num_centers }}</p>
+    <p>Estimated Cost Nerby Places: ${{ estimated_cost_nerby_places }}</p>
+    <p>Estimated Cost Place Details: ${{ estimated_cost_place_details }}</p>
+
+    <form action="/run" method="post">
+        <!-- Hidden inputs to pass parameters to the run route -->
+        <input type="hidden" name="place_type" value="{{ place_type }}">
+        <input type="hidden" name="center_lat" value="{{ center_lat }}">
+        <input type="hidden" name="center_lon" value="{{ center_lon }}">
+        <input type="hidden" name="radius" value="{{ radius }}">
+        <input type="hidden" name="expected_results" value="{{ expected_results }}">
+        <div class="buttons-container">
+            <input type="submit" value="Run">
+            <button type="button" onclick="window.location.href='/print_centers'">Print the Centers</button>
+            <button type="button" onclick="window.history.back()">Modify Parameters</button>
+        </div>
+    </form>
+</div>
+    
+</body>
+</html>

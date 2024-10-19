@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <title>Download Results</title>
+    <script>
+        // Automatically trigger the download after the page loads
+        window.onload = function() {
+            window.location.href = "/download/{{ filename }}";
+        };
+    </script>
+</head>
+<body>
+    <h2>Your CSV file is ready to download</h2>
+    <p>If the download doesn't start automatically, click <a href="/download/{{ filename }}">here</a>.</p>
+</body>
+</html>
