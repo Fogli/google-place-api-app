@@ -11,6 +11,18 @@ When all the places are collected, then the system will collect info using the `
 
 Before to run the script you can setup and have a preview on how much the API will cost you. And where are all the calculated centers.
 
+## Input Parameters:
+
+![image](static/img/input_parameters.png)
+
+
+## Preview of the calculated centers: 
+
+![image](static/img/centers_preview.png)
+
+## Cost Estimaation:
+
+![image](static/img/estimated_cost.png)
 
 
 
