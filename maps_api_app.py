@@ -201,8 +201,8 @@ def estimate_costs():
     # Calculate centers and estimate costs
     centers, intermediate_distance_in_meters = calculate_centers(center_lat, center_lon, radius, expected_results, results_per_query=20)
     num_centers = len(centers)
-    estimated_cost_nerby_places = num_centers * place_api_nerby_search_price 
-    estimated_cost_place_details = expected_results * place_api_place_details_price  # Example cost estimation
+    estimated_cost_nerby_places = round(num_centers * place_api_nerby_search_price,4) 
+    estimated_cost_place_details = round(expected_results * place_api_place_details_price,4)  # Example cost estimation
     
     # Store centers in a session or global variable (simplified for this example)
     app.config['CENTERS'] = centers
