@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Centers List and Map</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+
+    <!-- Leaflet CSS -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" crossorigin=""/>
+<!-- Leaflet JS -->
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" crossorigin=""></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Container for the map -->
+        <h3>Centers Map</h3>
+        <div id="map" style="height: 500px;"></div>
+
+        <h2>List of Centers</h2>
+        
+        <!-- Table displaying center coordinates -->
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Latitude</th>
+                    <th>Longitude</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for center in centers %}
+                <tr>
+                    <td>{{ loop.index }}</td>
+                    <td>{{ center[0] }}</td>
+                    <td>{{ center[1] }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+        <button onclick="window.history.back()">Back to Estimate</button>
+    </div>
+    
+    <script>
+        window.onload = function() {
+        // Safely convert centers into a JavaScript array, default to an empty array if undefined or null
+        //var centers = {{ centers | tojson | safe }} || [];
+        var centers = JSON.parse('{{ centers | tojson | safe }}');
+        // Get the user-defined center latitude and longitude, or default to 0.0 if not available
+        var centerLat = JSON.parse('{{ center_lat  }}');   
+        var centerLon = JSON.parse('{{ center_lon  }}');
+        
+        // Check if centers is not empty
+        if (centers.length > 0) {
+            // Initialize the map and set its view to the user-defined center point
+            var map = L.map('map').setView([centerLat, centerLon], 13);
+
+            // Add a tile layer to the map (OpenStreetMap)
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                maxZoom: 19,
+                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            }).addTo(map);
+
+            // Add markers for each center
+            centers.forEach(function(center, index) {
+                var marker = L.marker([center[0], center[1]]).addTo(map);
+                marker.bindPopup("<b>Center " + (index + 1) + "</b><br>Lat: " + center[0] + "<br>Lon: " + center[1]);
+            });
+        } else {
+            // Handle case where no centers are available
+            document.getElementById('map').innerHTML = '<p>No centers available to display.</p>';
+        }
+    };
+    </script>
+</body>
+</html>

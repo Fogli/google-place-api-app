@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Parameters Form</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>Input Parameters</h2>
+        <form action="/estimate" method="post">
+            <div class="form-group">
+                <label for="place_api_nerby_search_price">Cost NerbyPlaces:</label>
+                <input type="text" id="place_api_nerby_search_price" name="place_api_nerby_search_price" value="0.025">
+            </div>
+            <div class="form-group">
+                <label for="place_api_place_details_price">Cost Place Details:</label>
+                <input type="text" id="place_api_place_details_price" name="place_api_place_details_price" value="0.017">
+            </div>
+            <div class="form-group">
+                <label for="place_type">Type of Place:</label>
+                <input type="text" id="place_type" name="place_type" value="restaurant">
+            </div>
+            <div class="form-group">
+                <label for="center_lat">Latitude:</label>
+                <input type="text" id="center_lat" name="center_lat" value="45.07001">
+            </div>
+            <div class="form-group">
+                <label for="center_lon">Longitude:</label>
+                <input type="text" id="center_lon" name="center_lon" value="7.66672">
+            </div>
+            <div class="form-group">
+                <label for="radius">Radius (meters):</label>
+                <input type="text" id="radius" name="radius" value="6000">
+            </div>
+            <div class="form-group">
+                <label for="expected_results">Expected Results:</label>
+                <input type="text" id="expected_results" name="expected_results" value="3500">
+            </div>
+            <input type="submit" value="Estimate Costs">
+        </form>
+    </div>
+</body>
+</html>

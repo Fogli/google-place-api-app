@@ -1,0 +1,136 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h2 {
+    text-align: center;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center form elements */
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column; /* Stack label and input vertically */
+    width: 100%; /* Ensure the input fills the available width */
+}
+
+label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    text-align: center; /* Center the labels */
+}
+
+.form-group label {
+    flex: 1; /* Take up the space needed for alignment */
+    text-align: left; /* Align text to the right */
+    margin-left: 10px; /* Add some margin to separate label from input */
+}
+
+.form-group input[type="text"],
+.form-group input[type="password"] {
+    flex: 2; /* Make input wider */
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd; /* Add border to input fields */
+    border-radius: 4px;
+    width: 100%;
+}
+
+input[type="text"],
+input[type="password"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 50%;
+    text-align: center;
+}
+
+input[type="submit"],
+button {
+    padding: 12px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: auto; 
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover,
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Alert and Message Styles */
+p {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.error {
+    color: red;
+    text-align: center;
+}
+
+.success {
+    color: green;
+    text-align: center;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table th,
+table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+table th {
+    background-color: #f8f8f8;
+}
+
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: center; /* Center the buttons */
+    gap: 10px; /* Add space between the buttons */
+}
